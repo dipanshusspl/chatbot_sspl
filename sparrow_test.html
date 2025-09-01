@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chatbot Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        #ai-chatbot-messages {
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.ai-chatbot-message {
+  padding: 10px 15px;
+  max-width: 80%;
+  border-radius: 16px;
+  line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.ai-chatbot-message.user {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  color: #000;
+}
+
+.ai-chatbot-message.bot {
+  align-self: flex-start;
+  background-color: #f1f0f0;
+  color: #111;
+}
+
+.typing .dot-flashing {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+.ai-chatbot-message {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.ai-chatbot-message a {
+  color: #0066cc;
+  text-decoration: underline;
+  word-break: break-all; /* Break long URLs */
+}
+
+.dot-flashing {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+  margin-right: 6px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: #555;
+  animation: blink-cursor 0.7s steps(2, start) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Test Website</h1>
+        <p>This is a dummy website to test the AI chatbot widget.</p>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Our Service</h2>
+        <p>This is a sample website where you can test the chatbot functionality. The chat widget should appear in the bottom-right corner.</p>
+        
+        <h3>Sample Content</h3>
+        <p>You can ask the chatbot questions about:</p>
+        <ul>
+            <li>Our services and products</li>
+            <li>Pricing information</li>
+            <li>Support and help</li>
+            <li>Any FAQs you've added to the system</li>
+        </ul>
+
+        <p>Try clicking the chat button in the bottom-right corner to start a conversation!</p>
+    </div>
+
+    <!-- AI Chatbot Widget Script -->
+    <!-- <script>
+      (function() {
+        var chatbotConfig = {
+          apiUrl: 'http://localhost:3000/api/chat',
+          theme: {
+            primaryColor: '#3b82f6',
+            fontFamily: 'system-ui, sans-serif'
+          }
+        };
+        
+        var script = document.createElement('script');
+        script.src = 'http://localhost:3000/widget.js';
+        script.async = true;
+        script.onload = function() {
+          if (window.AIChatbot) {
+            window.AIChatbot.init(chatbotConfig);
+          }
+        };
+        document.head.appendChild(script);
+      })();
+    </script> -->
+
+
+    <script>
+  (function() {
+    var chatbotConfig = {
+      apiUrl: 'http://10.10.1.13:3000/api/chat',
+      theme: {
+        primaryColor: '#3b82f6',
+        fontFamily: 'system-ui, sans-serif'
+      }
+    };
+    
+    var script = document.createElement('script');
+    script.src = 'http://10.10.1.13:3000/widget.js';
+    script.async = true;
+    script.onload = function() {
+      if (window.AIChatbot) {
+        window.AIChatbot.init(chatbotConfig);
+      }
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
+    <script>
+        AIChatbot.init({
+        apiUrl: "https://your-api-endpoint.com/chat", // Replace with your backend
+        theme: {
+            primaryColor: "#4f46e5", // Customize color
+            fontFamily: "Arial, sans-serif"
+        }
+        });
+    </script>
+</body>
+</html>
