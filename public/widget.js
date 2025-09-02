@@ -398,28 +398,27 @@
             border-color: #94a3b8;
           }
           
-          // @media (max-width: 480px) {
-          //   #ai-chatbot-window {
-          //     //width: calc(100vw - 40px);
-          //     //height: calc(100vh - 100px);
-          //     bottom: 62px;
-          //     right: 20px;
-          //     height: 680px;
-          //     width: 360px;
-          //   }
-          // }
-
           @media (max-width: 480px) {
-              #ai-chatbot-window {
-                  width: calc(100vw - 40px);
-                  /* height: calc(100vh - 100px); */
-                  bottom: 62px;
-                  right: 0px;
-                  z-index: 9999999999999999999999999;
-                  height: 540px;
-                  /* width: 340px; */
-              }
+            #ai-chatbot-window {
+              width: calc(100vw - 40px);
+              height: calc(100vh - 200px);
+              bottom: 62px;
+              right: 0px;
+              
+            }
           }
+
+          // @media (max-width: 480px) {
+          //     #ai-chatbot-window {
+          //         width: calc(100vw - 40px);
+          //         /* height: calc(100vh - 100px); */
+          //         bottom: 62px;
+          //         right: 0px;
+          //         z-index: 9999999999999999999999999;
+          //         height: 540px;
+          //         /* width: 340px; */
+          //     }
+          // }
         </style>
         <!-- Curved Text and Emoji Bubble -->
         <div id="ai-chatbot-greeting-curve">
