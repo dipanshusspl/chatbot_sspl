@@ -182,7 +182,7 @@
             bottom: 62px;
             right: 0;
             width: 300px;
-            height: 400px;
+            height: 380px;
             background: white;
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.12);
