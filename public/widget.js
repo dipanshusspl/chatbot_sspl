@@ -181,8 +181,8 @@
             position: absolute;
             bottom: 80px;
             right: 0;
-            width: 310px;
-            height: 420px;
+            width: 300px;
+            height: 400px;
             background: white;
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.12);
@@ -305,7 +305,7 @@
             {
 
                 display: block;
-                min-height: 130px;
+                //min-height: 130px;
                 margin: auto;
             }
 
@@ -401,7 +401,7 @@
             #ai-chatbot-window {
               width: calc(100vw - 40px);
               height: calc(100vh - 100px);
-              bottom: 80px;
+              bottom: 62px;
               right: 20px;
             }
           }
