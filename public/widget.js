@@ -179,7 +179,7 @@
           
           #ai-chatbot-window {
             position: absolute;
-            bottom: 80px;
+            bottom: 62px;
             right: 0;
             width: 300px;
             height: 400px;
